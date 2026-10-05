@@ -319,13 +319,12 @@ def build():
     end_bg = Photo("0157").bg.filter(ImageFilter.GaussianBlur(10))
     end_bg = Image.blend(end_bg, Image.new("RGB", (W, H), NAVY), 0.35)
     shots.append(Shot(26.0, 30.0, lambda p: end_bg, [
-        (Text("L'Artisan", I, 104, 0.04, CX, 760, 26.7, 99, stagger=0.05), IVORY),
-        (Text("KANOYA", S, 88, 0.42, CX, 875, 27.0, 99, stagger=0.07), IVORY),
-        (Line(CX, 935, 300, 27.4, 99), GOLD),
-        (Text("奈良春日 鹿のや 内", J, 38, 0.22, CX, 1015, 27.6, 99, stagger=0.04), IVORY),
-        (Text("ご予約・お問い合わせ", J, 32, 0.22, CX, 1160, 28.0, 99, stagger=0.03), GOLD),
-        (Text("0742-22-6666", S, 64, 0.08, CX, 1245, 28.2, 99, stagger=0.03), IVORY),
-        (Text("lartisankanoya.com", I, 42, 0.04, CX, 1320, 28.4, 99, stagger=0.02), GOLD),
+        (Text("ある日のディナーより", J, 32, 0.32, CX, 760, 26.6, 99, stagger=0.04), GOLD),
+        (Text("L'Artisan", I, 112, 0.04, CX, 900, 26.8, 99, stagger=0.05), IVORY),
+        (Text("KANOYA", S, 92, 0.42, CX, 1020, 27.1, 99, stagger=0.07), IVORY),
+        (Line(CX, 1085, 300, 27.5, 99), GOLD),
+        (Text("奈良春日 鹿のや 内", J, 38, 0.24, CX, 1165, 27.8, 99, stagger=0.04), IVORY),
+        (Text("lartisankanoya.com", I, 44, 0.05, CX, 1250, 28.2, 99, stagger=0.02), GOLD),
     ], tr_fade))
     return shots
 
